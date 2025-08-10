@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QR Genious</title>
+  <link rel="stylesheet" href="qrstyle.css"/>
+</head>
+<body>
+  <h1>QR Genious</h1>
+  <div class="container">
+    <h2>Generate QR code in <br>seconds!</h2>
+    <h3></h3>
+    <form id="qr-form">
+      <input type="text" id="qr-input" 
+      placeholder="Enter or Paste URL" required />
+      <button type="submit">Generate QR</button>
+    </form>
+    <div id="qr-result"></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/qrious/dist/qrious.min.js"></script>
+  <script src="qrscript.js"></script>
+</body>
+</html>
