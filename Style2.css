@@ -1,0 +1,179 @@
+/* Base Styles and Layout */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  background: linear-gradient(140deg,#daf1ee 5%,#8eb6a8 30%, #235347 50%, #0b2b26 70%, #051f20 100%);
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  padding-left: 16px;
+  }
+
+.header h1 {
+  Color: #051f20e2;
+  font-family: 'Times New Roman', Times, serif;
+  text-shadow: #051f20;
+}
+
+/* Steps Section */
+.steps {
+  background: #fff;
+  border-radius: 14px;
+  padding: 22px 20px;
+  margin: 40px auto 24px auto;
+  max-width: 400px;
+  text-align: left;
+}
+
+.steps h2 {
+  margin-left: 35px;
+  color: #541a2e;
+  font-size: 1.16rem;
+  font-weight: 600;
+}
+
+.steps ol {
+  margin: 16px 0 0 16px;
+  color: #222;
+  font-size: 1.03rem;
+}
+
+.steps li {
+  margin-bottom: 13px;
+}
+
+.scroll-btn {
+  display: block;
+  margin: 22px auto 0 auto;
+  padding: 12px 30px;
+  background: #008080;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(166,206,227,0.18);
+  transition: background 0.22s;
+}
+.scroll-btn:hover {
+  background: #541a2e;
+}
+
+/* QR Generator Container */
+.container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 40px 30px;
+  background: transparent;
+  border-radius: 24px;
+  box-shadow: 0 10px 25px rgba(166,206,227,0.25);
+  text-align: center;
+  flex: 1;
+}
+
+h2 {
+  color: #051f20e2;
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+
+#qr-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: stretch;
+}
+
+#qr-input {
+  padding: 12px;
+  border: 1px solid #b1b1b1;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #008080;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button[type="submit"]:hover {
+  background: #541a2e;
+}
+
+#qr-result {
+  margin-top: 28px;
+}
+
+/* Download Button */
+.download-btn {
+  display: block;
+  margin: 18px auto 0 auto;
+  padding: 12px 28px;
+  background: #008080;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(166,206,227,0.15);
+  text-align: center;
+}
+.download-btn:hover {
+  background: #541a2e;
+}
+
+/* Description (below QR container) */
+.desc {
+  color: #555;
+  margin-top: 28px;
+  font-size: 1rem;
+}
+
+p{
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  margin-top: 0;
+  padding: 10px 0;
+  text-align: center;
+  color: #555;
+  font-size: 1rem;
+  background:transparent;
+  box-shadow: 0 -2px 12px rgba(166,206,227,0.12);
+}
+
+
+.footer p {
+  margin: 0px;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* Responsive tweaks */
+@media (max-width: 500px) {
+  .container, .steps {
+    max-width: 95vw;
+    border-radius: 14px;
+  }
+  .footer {
+    font-size: 0.94rem;
+    border-radius: 0 0 10px 10px;
+  }
+}

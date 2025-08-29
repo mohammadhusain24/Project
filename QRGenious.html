@@ -1,24 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>QR Genious</title>
-  <link rel="stylesheet" href="qrstyle.css"/>
-</head>
-<body>
-  <h1>QR Genious</h1>
-  <div class="container">
-    <h2>Generate QR code in <br>seconds!</h2>
-    <h3></h3>
-    <form id="qr-form">
-      <input type="text" id="qr-input" 
-      placeholder="Enter or Paste URL" required />
-      <button type="submit">Generate QR</button>
-    </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>QR Genious</title>
+    <link rel="stylesheet" href="Style2.css"/>
+  </head>
+
+  <body>
+    <div class="header" id="myHeader">
+      <h1>QR Genious</h1>
+    </div>
+
+  
+   <div class="container" id="qr-generator">
+     <h2>Generate QR Code<br>in Seconds!</h2>
+     <form id="qr-form">
+       <input type="text" id="qr-input" placeholder="Enter or Paste URL" required />
+       <button type="submit">Generate QR</button>
+     </form>
     <div id="qr-result"></div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/qrious/dist/qrious.min.js"></script>
-  <script src="qrscript.js"></script>
-</body>
+   </div>
+ 
+
+    <div class="steps">
+      <h2>How to Use :</h2>
+      <h3>Step 1 : <br>Enter your text or URL into the box.</h3>
+      <ol>
+        <li>Enter your text or URL into the box.</li>
+        <li>Click on <strong>Generate QR</strong> button.</li>
+        <li>Download generated QR image.</li>
+     </ol>
+   </div>
+   
+   <button id="goto-generator" class="scroll-btn">Go to QR Generator</button>
+    
+    <footer class="footer">
+      <p>
+     &copy; Created by Mohammad Husain
+      </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrious/dist/qrious.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
